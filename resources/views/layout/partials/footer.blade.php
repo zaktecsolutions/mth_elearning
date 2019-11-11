@@ -1,3 +1,4 @@
+<!-- Footer template -->
 <footer class="text-white fixed-bottom bg-dark">
 
   <div class="container">
