@@ -1,5 +1,5 @@
 <!-- Footer template -->
-<footer class="text-white fixed-bottom bg-dark">
+<footer class="text-white bg-dark">
 
   <div class="container">
 

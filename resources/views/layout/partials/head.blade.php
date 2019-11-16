@@ -7,7 +7,7 @@
 
 <meta name="author" content="">
 
-<title>MTH</title>
+<title>@yield('title')</title>
 <base href="{{ URL::asset('/')}}" target="_blank">
 
 <!-- Bootstrap core CSS -->
