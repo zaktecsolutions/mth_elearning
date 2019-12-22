@@ -12,11 +12,13 @@
 
 <!-- Bootstrap core CSS -->
 
-<link rel="stylesheet" href="{{ url('css/bootstrap.min.css')}}">
+<link rel="stylesheet" href="{{ url('css/bootstrap.css')}}">
+
 
 <!-- Custom styles for this template -->
 
 <link rel="stylesheet" href="{{ url('css/style.css')}}">
+
 
 
 {{-- <!-- Bootstrap core Javascript -->

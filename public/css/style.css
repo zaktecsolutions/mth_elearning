@@ -1,4 +1,54 @@
- body {
-     padding-top: 70px;
-     padding-bottom: 70px;
- }
+body {
+ padding-top: 90px;
+ padding-bottom: 70px;
+}
+.new-post {
+ padding: 16px 0;
+ border-bottom: 1px solid #ccc;               
+}
+                
+.new-post header,
+.posts header {
+ margin-bottom: 20px;
+}
+.posts .post{
+    padding-left: 10px;
+    border-left: 3px solid #a21b24;
+    margin-bottom: 30px;
+}
+.post .post .info {
+    color: #aaa;
+    font-style: italic;
+
+}
+.error{
+    border: 1px solid red;
+    background-color: #f9b5af;
+    color: red;
+}
+.error ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.success{
+  border: 1px solid green;
+  background-color: #d1f9da;
+  color: green;  
+}
+
+.error, .success{
+ text-align: center ;   
+}
+
+/* Footor style  */
+.vertical-links>li {
+    display: inline-block;
+    vertical-align: text-bottom;
+    }
+    .vertical-links>li>a {
+    color: white;
+    font-weight: 400;
+    margin-left: 1rem;
+    list-style-type:square;
+    }

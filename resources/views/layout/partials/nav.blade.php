@@ -22,15 +22,15 @@
 				<a class="nav-link" href="#">FAQ </a>
 			</li>
 		</ul>
-		<ul class="navbar-right">
-				<form action="/action_page.php">
-				  <input type="text" placeholder="Username" name="username">
-				  <input type="text" placeholder="Password" name="psw">
-				  <button type="submit">Login</button>
-				</form>
-			</ul>
-			  
+		{{--   <ul class="navbar-right">
+		 	<form action="/action_page.php">
+				<input type="text" placeholder="Username" name="username">
+				<input type="text" placeholder="Password" name="psw">
+				<button type="submit">Login</button> 		
+				<a href="{{ route('logout') }}" class="btn btn-light" role="button">Logout</a>
+			</form>
+		</ul>    --}}
+
+
 	</div>
 </nav>
-
-

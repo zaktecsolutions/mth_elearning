@@ -9,3 +9,5 @@
 <!-- Bootstrap core Javascript -->
 <script src="{{ url('js/popper.min.js')}}"> </script>
 
+<!-- customized Javascript -->
+<script src="{{ url('js/myapp.js')}}"> </script>
