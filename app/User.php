@@ -15,5 +15,9 @@ class User extends Model implements Authenticatable
         return $this->hasMany('App\Post');
     }
 
+    public function courses()
+    {
 
+        return $this->hasOne('App\Courses');
+    }
 }

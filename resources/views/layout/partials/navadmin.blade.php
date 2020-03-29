@@ -7,7 +7,7 @@
 	</button>
 	<div class="collapse navbar-collapse" id="collapse_target">
 		{{-- <span class="navbar-text">hgjhfjhgjhgfj</span>  --}}
-		<a class="navbar-brand" href="{{ route('dashboard') }}">  Student Dashboard</a>
+		<a class="navbar-brand" href="{{ route('dashboard') }}">  Admin Dashboard</a>
 		{{-- <a class="navbar-brand"><img src="{{ url('images/mathstutorhelplogo.png')}}"> </a> --}}
 		<ul class="navbar-nav">
 			<li class="nav-item">

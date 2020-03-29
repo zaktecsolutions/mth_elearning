@@ -9,7 +9,7 @@ Homepage
 <div class="container">
 
   {{-- For form validation and reporting the error  --}}
-@include('includes.message-block')
+  @include('includes.message-block')
   {{--  demo data  --}}
   <div class="row">
     <h1>This is a demo text</h1>
@@ -30,17 +30,24 @@ Homepage
       <form action="{{ route('signup')}}" method="post">
         <div class="form-group">
           <label for="email">Your Email</label>
-          <input class="form-control {{ $errors->has('email') ? 'is-invalid':''}}" type="text" name="email" id="email" value="{{ Request::old('email')}}">
+          <input class="form-control {{ $errors->has('email') ? 'is-invalid':''}}" type="text" name="email" id="email"
+            value="{{ Request::old('email')}}">
         </div>
         <div class="form-group">
           <label for="first_name">Your First Name</label>
-          <input class="form-control {{ $errors->has('email') ? 'is-invalid':''}}" type="text" name="first_name" id="first_name"
-            value="{{ Request::old('first_name')}}">
+          <input class="form-control {{ $errors->has('firstname') ? 'is-invalid':''}}" type="text" name="firstname"
+            id="firstname" value="{{ Request::old('firstname')}}">
         </div>
         <div class="form-group">
-          <label for="password">Password</label>
-          <input class="form-control {{ $errors->has('email') ? 'is-invalid':''}}" type="password" name="password" id="password"
-            value="{{ Request::old('password')}}">
+          <label for="lastname"> Your Last Name</label>
+          <input class="form-control {{ $errors->has('lastnamed') ? 'is-invalid':''}}" type="lastname" name="lastname"
+            id="lastname" value="{{ Request::old('lastname')}}">
+        </div>
+
+        <div class="form-group">
+          <label for="password"> Your Password</label>
+          <input class="form-control {{ $errors->has('password') ? 'is-invalid':''}}" type="password" name="password"
+            id="password" value="{{ Request::old('password')}}">
         </div>
         <button type="submit" class="btn btn-primary"> Submit </button>
         <input type="hidden" name="_token" value="{{Session::token()}}">
@@ -52,15 +59,16 @@ Homepage
     <div class="col-md-6">
       <h3> Sign In </h3>
       <form action="{{ route('signin')}}" method="post">
-        
+
         <div class="form-group">
           <label for="email">Your Email</label>
-          <input class="form-control {{ $errors->has('email') ? 'is-invalid':''}}" type="text" name="email" id="email" value="{{ Request::old('email')}}">
+          <input class="form-control {{ $errors->has('email') ? 'is-invalid':''}}" type="text" name="email" id="email"
+            value="{{ Request::old('email')}}">
         </div>
         <div class="form-group">
-          <label for="password">Password</label>
-          <input class="form-control {{ $errors->has('email') ? 'is-invalid':''}}" type="password" name="password" id="password"
-            value="{{ Request::old('password')}}">
+          <label for="password">Your Password</label>
+          <input class="form-control {{ $errors->has('email') ? 'is-invalid':''}}" type="password" name="password"
+            id="password" value="{{ Request::old('password')}}">
         </div>
         <button type="submit" class="btn btn-primary"> Submit </button>
         <input type="hidden" name="_token" value="{{Session::token()}}">

@@ -9,35 +9,32 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 
-
 class UserController extends Controller
 {
     //
 
-    public function getDashboard()
-    {
-
-        return view('students.backend.dashboard');
-    }
-
+   
     public function postSignUp(Request $request)
     {
         // Checks for validation of signin form
 
         $this->validate($request, [
             'email' => 'required|email|unique:users',
-            'first_name' => 'required| max:120',
+            'firstname' => 'required| max:120',
+            'lastname' => 'required| max:120',
             'password' => 'required| min:4',
         ]);
 
         // input sign in information
         $email = $request['email'];
-        $first_name = $request['first_name'];
+        $firstname = $request['firstname'];
+        $lastname = $request['lastname'];
         $password = bcrypt($request['password']);
 
         $user = new User();
         $user->email = $email;
-        $user->first_name = $first_name;
+        $user->firstname = $firstname;
+        $user->lastname = $lastname;
         $user->password = $password;
 
         $user->save();
